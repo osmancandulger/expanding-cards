@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -12,9 +12,10 @@ body {
   justify-content: center;
   overflow: hidden;
   margin: 0;
+  animation: show 0.8s ease;
 }
-header{
-  h1{
+header {
+  h1 {
     font-size: 45px;
     font-weight: 700;
     color: rgba(14, 13, 12, 0.616);
@@ -62,5 +63,15 @@ header{
   .panel:nth-of-type(2),
   .panel:nth-of-type(3) {
     display: none;
+  }
+}
+@keyframes show {
+  0% {
+    opacity: 0;
+    margin-top: 25px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
   }
 }
